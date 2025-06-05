@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Hero from "@/app/sections/hero";
 import Femovate from "@/app/sections/femovate";
-import ContactUs from "./sections/contactUs";
+
 
 export default function Home() {
   return (
@@ -9,7 +9,6 @@ export default function Home() {
     <Hero/>
     <Femovate/>
    
-      <ContactUs />
     
     
 

@@ -15,8 +15,10 @@ export default function Home() {
   <Navbar/>
     <Hero/>
     <Femovate/>
-    <FAQSection/>
-    <Footer/>
+    <Form/>
+     <ContactUs/>
+    <FAQ/>
+    <Footer/>  
 
 
  </div> 

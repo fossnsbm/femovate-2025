@@ -10,12 +10,12 @@ import {
 function Footer() {
   return (
     <footer className="bg-[#650E17] text-white w-full">
-      <div className="max-w-7xl mx-auto px-6 pt-6 pb-6 flex flex-col gap-6"
-        style={{ marginTop: "100px" }}>
+      <div className="max-w-7xl mx-auto px-6 pt-6 pb-2 flex flex-col gap-6"
+       >
 
         {/* Top Content */}
         <div className="flex flex-col md:flex-row items-center justify-between w-full"
-          style={{ paddingTop: "50px", marginLeft: "50px", marginRight: "50px" }}>
+        >
 
           {/* Left Section */}
           <div className="text-left text-sm md:pl-8">
@@ -30,7 +30,7 @@ function Footer() {
           </div>
 
           {/* Right Section */}
-          <div className="text-right text--gray-300 md:pr-8">
+          <div className="text-right text--gray-300 md:pr-8 mt-8 md:mt-0">
             <div className="flex justify-center md:justify-end gap-15 text-lg mb-1">
               <a href="https://whatsapp.com/channel/0029Vb7MbXeBPzjPouLpSY0j" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp />
@@ -56,13 +56,13 @@ function Footer() {
         </div>
 
         {/* Spacer before line */}
-        <div className="h-4" />
+        <div className="md:h-4 " />
 
         {/* Bottom Centered Line */}
-        <div className="border-t border-gray-400 w-[90%] md:w-11/12 lg:w-10/12 xl:w-9/12 mx-auto my-6" />
+        <div className="border-t border-gray-400 w-[90%] md:w-11/12 lg:w-10/12 xl:w-9/12 mx-auto my-2" />
 
         {/* Spacer below line to footer end */}
-        <div className="h-4" />
+        <div className="md:h-4" />
       </div>
     </footer>
   );

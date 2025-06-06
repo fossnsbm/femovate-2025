@@ -16,7 +16,7 @@ function Hero() {
       
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-10">
         <span
-          className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight -translate-y-2 sm:-translate-y-0.5 md:-translate-y-10"
+          className=" text-4xl md:text-7xl font-bold text-white leading-tight -translate-y-2 sm:-translate-y-0.5 md:-translate-y-10"
           style={{ color: "#E6DBCE" }}
         >
           EMPOWERING MINDS <br />

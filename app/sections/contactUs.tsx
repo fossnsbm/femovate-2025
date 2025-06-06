@@ -49,9 +49,9 @@ const ContactUs = () => {
                                     className="z-0"
                                     priority
                                 />
-                                <div className="absolute inset-0 z-10 flex items-center justify-center text-white text-lg md:text-2xl font-bold select-none pointer-events-none">
-                                    Click Here
-                                </div>
+                                <a href="https://chat.whatsapp.com/GY4ji4rmvA43WH8K83f4Bk" target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-10 flex items-center justify-center text-white text-lg md:text-2xl font-bold select-none visited:text-white hover:text-white no-underline">
+  Click Here
+</a>
                             </div>
                         </div>
                     </div>

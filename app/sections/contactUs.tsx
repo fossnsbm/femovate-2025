@@ -3,7 +3,8 @@ import Image from 'next/image';
 
 const ContactUs = () => {
     return (
-        <div className="w-full bg-white">
+        <>
+        <div className="w-full">
             {/* Main Content Section */}
             <div className="flex flex-col lg:flex-row w-full lg:gap-0 gap-4">
                 {/* Spacer for desktop, hidden on mobile */}
@@ -22,21 +23,21 @@ const ContactUs = () => {
                                     className="z-0"
                                     priority
                                 />
-                                <div className="absolute inset-0 z-10 flex items-center justify-center text-white text-3xl md:text-6xl font-medium select-none pointer-events-none">
+                                <div className="absolute inset-0 z-10 flex items-center justify-center text-white text-3xl md:text-5xl font-medium select-none pointer-events-none">
                                     Contact
                                 </div>
                             </div>
                             {/* "Us" beside image */}
-                            <div className="text-black text-3xl md:text-6xl font-medium self-center">
+                            <div className="text-black text-3xl md:text-5xl font-medium self-center">
                                 Us
                             </div>
                         </div>
 
-                        <div className="text-black text-lg md:text-2xl lg:text-2xl font-med leading-relaxed pl-0 md:pl-6 lg:pl-10 text-center md:text-left">
+                        <div className="text-black text-lg md:text-xl lg:text-2xl font-med leading-relaxed pl-0 md:pl-6 lg:pl-10 text-center md:text-left">
                             Have questions, suggestions, or a spark of inspiration? <br />
                             Reach out to us — together, we can empower change and innovate for a brighter, more inclusive future.
                         </div>
-                        <div className="bg-[#E6DBCE] lg:rounded-2xl flex flex-col md:flex-row justify-around items-center p-6 md:p-12 lg:p-24 w-full h-auto md:h-36 cursor-pointer hover:bg-[#D4C2A6] transition-colors duration-300 gap-4 md:gap-0">
+                        <div className="bg-[#E6DBCE] lg:rounded-2xl flex flex-col md:flex-row justify-around items-center p-6 md:p-12 lg:p-24 w-full h-auto md:h-32 cursor-pointer hover:bg-[#D4C2A6] transition-colors duration-300 gap-4 md:gap-0">
                             <div className="text-black text-2xl  font-medium text-center">
                                 Join our WhatsApp Group
                             </div>
@@ -69,6 +70,9 @@ const ContactUs = () => {
                 </div>
             </div>
         </div>
+       
+
+    </>
     );
 };
 

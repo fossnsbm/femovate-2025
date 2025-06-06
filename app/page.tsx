@@ -5,7 +5,7 @@ import FAQSection from "./sections/faq-section";
 
 import Navbar from "./sections/navbar";
 import Form from "@/app/sections/form";
-import ContactUs from "./sections/contact-s";
+import ContactUs from "./sections/contact-us";
 import FAQ from "./sections/faq";
 import Footer from "./sections/footer";
 

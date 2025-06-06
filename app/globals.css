@@ -8,14 +8,14 @@
   /* Light Theme */
   --color-bg: #f9fafb;
   --color-text: #111827;
-  --color-primary: #6366f1;
+  
   --color-secondary: #e0e7ff;
   --color-border: #d1d5db;
 
   /* Button */
   --btn-bg: var(--color-primary);
   --btn-text: #ffffff;
-  --btn-hover: #4f46e5;
+ 
 }
 
 * {

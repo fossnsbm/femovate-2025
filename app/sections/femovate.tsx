@@ -19,7 +19,8 @@ function femovate() {
           </div>
         </div>
 
-       
+
+
         <div className="flex flex-col md:flex-row justify-between gap-20"
           style={{ marginTop: '50px' }}>
           

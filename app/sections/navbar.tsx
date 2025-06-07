@@ -15,7 +15,14 @@ function Navbar() {
           style={{ gap: "3.5rem", marginLeft: "1rem" }}
         >
           <a
-            href="#"
+            href="#hero"
+            onClick={e => {
+              e.preventDefault();
+              const heroSection = document.getElementById("hero");
+              if (heroSection) {
+                heroSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
             className="text-black hover:text-[#650E17] font-medium transition-colors duration-300"
             style={{
               fontSize: "1.1rem",
@@ -27,8 +34,15 @@ function Navbar() {
             Home
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#650E17] transition-all duration-300 group-hover:w-full"></span>
           </a>
-          <a
-            href="#"
+            <a
+            href="#aboutus"
+            onClick={e => {
+              e.preventDefault();
+              const aboutSection = document.getElementById("aboutus");
+              if (aboutSection) {
+              aboutSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
             className="text-black hover:text-[#650E17] font-medium transition-colors duration-300"
             style={{
               fontSize: "1.1rem",
@@ -36,12 +50,19 @@ function Navbar() {
               position: "relative",
               padding: "0.5rem 0",
             }}
-          >
+            >
             About Us
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#650E17] transition-all duration-300 group-hover:w-full"></span>
-          </a>
+            </a>
           <a
-            href="#"
+            href="#contactus"
+            onClick={e => {
+              e.preventDefault();
+              const aboutSection = document.getElementById("contactus");
+              if (aboutSection) {
+              aboutSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
             className="text-black hover:text-[#650E17] font-medium transition-colors duration-300"
             style={{
               fontSize: "1.1rem",
@@ -58,7 +79,7 @@ function Navbar() {
         {/* Register Now button */}
         <div className="hidden md:block" style={{ marginRight: "1rem" }}>
           <button
-            className=" rounded-full font-semibold transition duration-300 hover:scale-105"
+            className="rounded-full font-semibold transition duration-300 hover:scale-105"
             style={{
               color: "#FFFFFF",
               backgroundColor: "#650E17",
@@ -66,6 +87,13 @@ function Navbar() {
               fontWeight: "600",
               boxShadow: "0 4px 6px rgba(101, 14, 23, 0.3)",
               border: "1px solid #650E17",
+            }}
+            onClick={e => {
+              e.preventDefault();
+              const registerSection = document.getElementById("register");
+              if (registerSection) {
+          registerSection.scrollIntoView({ behavior: "smooth" });
+              }
             }}
           >
             Register Now
@@ -97,7 +125,7 @@ function Navbar() {
           style={{ gap: "1.25rem" }}
         >
           <a
-            href="#"
+            href="#hero"
             className="w-full text-center py-2 hover:bg-gray-100 rounded-lg transition-colors"
             style={{
               fontSize: "1.1rem",
@@ -119,7 +147,7 @@ function Navbar() {
             About Us
           </a>
           <a
-            href="#"
+            href="#contactus"
             className="w-full text-center py-2 hover:bg-gray-100 rounded-lg transition-colors"
             style={{
               fontSize: "1.1rem",
@@ -131,6 +159,13 @@ function Navbar() {
           </a>
           <button
             className="w-full max-w-[200px] py-2 rounded-full font-semibold transition duration-300 hover:scale-105"
+              onClick={e => {
+              e.preventDefault();
+              const registerSection = document.getElementById("register");
+              if (registerSection) {
+          registerSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
             style={{
               color: "#FFFFFF",
               backgroundColor: "#650E17",

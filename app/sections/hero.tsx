@@ -2,7 +2,8 @@ import React from "react";
 
 function Hero() {
   return (
-    <div
+    <div 
+      id="hero"
       className="relative flex items-end justify-center h-[80vh] rounded-b-4xl sm:rounded-b-3xl md:rounded-b-4xl"
       style={{ backgroundColor: "#650E17" }}
     >

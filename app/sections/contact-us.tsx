@@ -6,7 +6,7 @@ const ContactUs = () => {
     <>
     
         {/* Main Content Section */}
-        <div className="flex flex-col lg:flex-row w-full lg:gap-0 gap-4">
+        <div id="contactus" className="flex flex-col lg:flex-row w-full lg:gap-0 gap-4">
           {/* Spacer for desktop, hidden on mobile */}
           {/* <div className="hidden lg:block w-30"></div> */}
           {/* Left Section */}

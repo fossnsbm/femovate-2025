@@ -136,7 +136,7 @@ function Navbar() {
             Home
           </a>
           <a
-            href="#"
+            href="#aboutus"
             className="w-full text-center py-2 hover:bg-gray-100 rounded-lg transition-colors"
             style={{
               fontSize: "1.1rem",

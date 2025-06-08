@@ -39,7 +39,7 @@ const AboutUs = () => {
                                 width={400}
                                 height={200}
                                 className="rounded-t-xl object-cover w-full h-48"
-                                style={{ objectFit: 'cover' }}
+                               
                             />
                         </figure>
                         <div className="card-body items-center text-center p-4 flex-1 flex flex-col">

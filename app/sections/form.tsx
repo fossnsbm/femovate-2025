@@ -294,7 +294,7 @@ function FormSection() {
                         <div className="grid grid-cols-1 gap-4">
                           <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">
-                              Full Name
+                               Name
                             </label>
                             <input
                               type="text"
@@ -309,20 +309,22 @@ function FormSection() {
 
                           <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">
-                              Email Address
+                              Student Email 
                             </label>
                             <input
                               type="email"
                               name="email"
                               value={members[step - 1].email}
                               onChange={handleChange}
-                              placeholder="Enter member's email"
+                              placeholder="Enter nsbm student email"
                               required
+                              pattern=".+@students\.nsbm\.ac\.lk$"
                               className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#650E17] focus:border-[#650E17] transition-all"
                             />
+                          
                           </div>
 
-                          <div>
+                            <div>
                             <label className="block text-sm font-medium text-gray-700 mb-1">
                               Contact Number
                             </label>
@@ -333,9 +335,11 @@ function FormSection() {
                               onChange={handleChange}
                               placeholder="Enter phone number"
                               required
+                              inputMode="tel"
+                              pattern="[0-9]{10,15}"
                               className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#650E17] focus:border-[#650E17] transition-all"
                             />
-                          </div>
+                            </div>
 
                           <div className="grid grid-cols-2 gap-4">
                             <div>
@@ -347,7 +351,7 @@ function FormSection() {
                                 name="faculty"
                                 value={members[step - 1].faculty}
                                 onChange={handleChange}
-                                placeholder="e.g. Science"
+                                placeholder="e.g. FOC"
                                 required
                                 className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#650E17] focus:border-[#650E17] transition-all"
                               />
@@ -362,7 +366,7 @@ function FormSection() {
                                 name="batch"
                                 value={members[step - 1].batch}
                                 onChange={handleChange}
-                                placeholder="e.g. 2023"
+                                placeholder="e.g. 23.1"
                                 required
                                 className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#650E17] focus:border-[#650E17] transition-all"
                               />

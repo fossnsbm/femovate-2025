@@ -1,6 +1,6 @@
 import React from "react";
 import BlurText from "../motions/blurtext";
-
+import Image from "next/image";
 function Hero() {
   return (
     <div
@@ -39,8 +39,16 @@ function Hero() {
           className=" text-5xl md:text-7xl font-bold text-[#E6DBCE] leading-tight -translate-y-2 sm:-translate-y-0.5 md:-translate-y-10 "
         /> 
       </div>
+  {/* <img src="/lady new.png" alt="Hero Image" /> */}
 
-      <img src="/lady new.png" alt="Hero Image" />
+  <Image 
+    src="/lady new.png"
+    alt="Hero Background"
+    width={500}
+    height={1080}
+    className= "inset-0  bottom-0 "
+  /> 
+      
     </div>
   );
 }

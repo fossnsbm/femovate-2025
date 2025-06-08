@@ -79,7 +79,7 @@ function Navbar() {
         {/* Register Now button */}
         <div className="hidden md:block" style={{ marginRight: "1rem" }}>
           <button
-            className="rounded-full font-semibold transition duration-300 hover:scale-105"
+            className="rounded-full font-semibold transition duration-300 hover:scale-105 "
             style={{
               color: "#FFFFFF",
               backgroundColor: "#650E17",

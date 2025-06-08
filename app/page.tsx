@@ -3,11 +3,11 @@ import Hero from "@/app/sections/hero";
 import Femovate from "@/app/sections/femovate";
 import FAQSection from "./sections/faq-section";
 
-import Navbar from "./sections/navbar";
+import Navbar from "../components/ui/navbar";
 import Form from "@/app/sections/form";
 import ContactUs from "./sections/contact-us";
 import FAQ from "./sections/faq";
-import Footer from "./sections/footer";
+import Footer from "../components/ui/footer";
 import AboutUs from "./sections/about-us";
 
 export default function Home() {

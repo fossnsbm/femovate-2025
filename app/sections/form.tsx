@@ -382,58 +382,59 @@ function FormSection() {
                 </div>
               )}
 
-              {/* Navigation Buttons */}
-              <div className="flex justify-between pt-6">
-                {step > 1 && (
-                  <motion.button
-                    type="button"
-                    onClick={handlePrev}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="px-4 py-3 rounded-lg bg-gradient-to-r from-[#6B7280] to-[#4B5563] text-white hover:from-[#4B5563] hover:to-[#374151] transition-all shadow-md font-medium flex items-center gap-4"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    Previous
-                  </motion.button>
-                )}
-                <motion.button
-                  type="submit"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className={`ml-auto px-4 py-3 rounded-lg text-white font-medium transition-all shadow-md flex items-center gap-2 ${
-                    isSubmitting 
-                      ? 'bg-gradient-to-r from-[#8A1E29] to-[#650E17] cursor-not-allowed'
-                      : 'bg-gradient-to-r from-[#650E17] to-[#8A1E29] hover:from-[#8A1E29] hover:to-[#650E17]'
-                  }`}
-                  disabled={isSubmitting || (step === 1 && !teamSize)}
-                >
-                  {isSubmitting ? (
-                    <>
-                      <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                      </svg>
-                      Processing...
-                    </>
-                  ) : step === (teamSize || MAX_MEMBERS) ? (
-                    <>
-                      Submit Team
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                      </svg>
-                    </>
-                  ) : (
-                    <>
-                      Next Member
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
-                      </svg>
-                    </>
-                  )}
-                </motion.button>
-              </div>
+{/* Navigation Buttons - Updated with responsive classes */}
+<div className="flex flex-row sm:flex-row justify-center gap-4 pt-6">
+  {step > 1 && (
+    <motion.button
+      type="button"
+      onClick={handlePrev}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="px-4 py-3 rounded-lg bg-gradient-to-r from-[#6B7280] to-[#4B5563] text-white hover:from-[#4B5563] hover:to-[#374151] transition-all shadow-md font-medium flex items-center justify-center gap-2 w-full sm:w-auto"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
+      </svg>
+      <span className="whitespace-nowrap">Previous</span>
+    </motion.button>
+  )}
+  
+  <motion.button
+    type="submit"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className={`px-4 py-3 rounded-lg text-white font-medium transition-all shadow-md flex items-center justify-center gap-2 w-full sm:w-auto ${
+      isSubmitting 
+        ? 'bg-gradient-to-r from-[#8A1E29] to-[#650E17] cursor-not-allowed'
+        : 'bg-gradient-to-r from-[#650E17] to-[#8A1E29] hover:from-[#8A1E29] hover:to-[#650E17]'
+    }`}
+    disabled={isSubmitting || (step === 1 && !teamSize)}
+  >
+    {isSubmitting ? (
+      <>
+        <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+        </svg>
+        <span className="whitespace-nowrap">Processing...</span>
+      </>
+    ) : step === (teamSize || MAX_MEMBERS) ? (
+      <>
+        <span className="whitespace-nowrap">Submit Team</span>
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+        </svg>
+      </>
+    ) : (
+      <>
+        <span className="whitespace-nowrap">Next Member</span>
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+        </svg>
+      </>
+    )}
+  </motion.button>
+</div>
             </form>
           </div>
         </motion.div>

@@ -8,6 +8,7 @@ const femovate = () => {
           
           <div className="md:w-1/2 mx-12" >
             <h1 className="md:text-6xl text-5xl font-bold mb-4">Turning Ideas Into Masterpieces</h1>
+
           </div>
 
           <div className="md:w-1/2 text-gray-600">
@@ -20,8 +21,10 @@ const femovate = () => {
        
         <div className="flex flex-col md:flex-row justify-between gap-20">
           
+
           <div className="w-full md:w-3/4 bg-[#6E0E18] text-[#E6DBCE]  flex items-center justify-center p-4">
             <p className="md:text-5xl text-3xl  font-bold">
+
               "This isn’t just a competition; it’s an opportunity to spark innovation, amplify your voice, and shape the future together."
             </p>
           </div>
@@ -30,8 +33,11 @@ const femovate = () => {
             <img
               src="/mic.png"
               alt="Mic"
+
               className="w-40  md:w-72 h-auto transition-transform duration-500 hover:scale-x-[-1]"
+
             />
+
           </div>
 
         </div>

@@ -8,6 +8,7 @@ import Form from "@/app/sections/form";
 import ContactUs from "./sections/contact-us";
 import FAQ from "./sections/faq";
 import Footer from "./sections/footer";
+import AboutUs from "./sections/about-us";
 
 export default function Home() {
   return (
@@ -18,7 +19,9 @@ export default function Home() {
     <Form/>
      <ContactUs/>
     <FAQ/>
+    <AboutUs/>
     <Footer/>  
+    
 
 
  </div> 

@@ -24,14 +24,14 @@ function Footer() {
           </div>
 
           {/* Center Logos */}
-          <div className="flex justify-center items-center gap-8">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8">
             <img src="/foss.png" alt="FOSS Logo" className="h-12 w-auto" />
             <img src="/wif.png" alt="Women in FOSS Logo" className="h-12 w-auto" />
           </div>
 
           {/* Right Section */}
           <div className="text-right text--gray-300 md:pr-8">
-            <div className="flex justify-center md:justify-end gap-15 text-lg mb-1">
+            <div className="flex justify-center md:justify-end gap-13 text-lg mb-1">
               <a href="https://whatsapp.com/channel/0029Vb7MbXeBPzjPouLpSY0j" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp />
               </a>

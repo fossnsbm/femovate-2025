@@ -1,15 +1,14 @@
 import React from 'react'
 
-function femovate() {
+const femovate = () => {
   return (
-    <main className="p-8"
-          style={{ marginLeft: '80px', marginRight: '80px', marginBottom: '80px' }}>
+   <div className="mt-20">
         
-        <div className="flex flex-col md:flex-row justify-between gap-8 mt-8"
-          style={{ marginTop: '130px' }}>
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8 mx-12 mb-20 ">
           
-          <div className="md:w-1/2">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4">Turning Ideas Into Masterpieces</h1>
+          <div className="md:w-1/2 mx-12" >
+            <h1 className="md:text-6xl text-5xl font-bold mb-4">Turning Ideas Into Masterpieces</h1>
+
           </div>
 
           <div className="md:w-1/2 text-gray-600">
@@ -20,12 +19,12 @@ function femovate() {
         </div>
 
        
-        <div className="flex flex-col md:flex-row justify-between gap-20"
-          style={{ marginTop: '50px' }}>
+        <div className="flex flex-col md:flex-row justify-between gap-20">
           
-          <div className="w-full md:w-3/4 bg-[#6E0E18] text-[#E6DBCE] rounded-lg flex items-center justify-center">
-            <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-left"
-              style={{ marginLeft: '150px',marginRight: '150px', marginTop: '50px', marginBottom: '50px' }}>
+
+          <div className="w-full md:w-3/4 bg-[#6E0E18] text-[#E6DBCE]  flex items-center justify-center p-4">
+            <p className="md:text-5xl text-3xl  font-bold">
+
               "This isn’t just a competition; it’s an opportunity to spark innovation, amplify your voice, and shape the future together."
             </p>
           </div>
@@ -34,13 +33,15 @@ function femovate() {
             <img
               src="/mic.png"
               alt="Mic"
-              className="w-32 sm:w-40 md:w-52 lg:w-72 h-auto transition-transform duration-500 hover:scale-x-[-1]"
+
+              className="w-40  md:w-72 h-auto transition-transform duration-500 hover:scale-x-[-1]"
+
             />
 
           </div>
 
         </div>
-      </main>
+      </div>
   )
 }
 

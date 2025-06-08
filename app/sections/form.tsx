@@ -266,9 +266,12 @@ function FormSection() {
                       </motion.button>
                     ))}
                   </div>
+      
                   <p className="text-xs text-gray-500 mt-2 text-center">
-                    Minimum {MIN_MEMBERS}, maximum {MAX_MEMBERS} members
+                    Minimum {MIN_MEMBERS}, maximum {MAX_MEMBERS} members <br />
+                     *At least 2 girls should be in a group.
                   </p>
+                 
                 </div>
               )}
 
@@ -387,7 +390,7 @@ function FormSection() {
                     onClick={handlePrev}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="px-6 py-3 rounded-lg bg-gradient-to-r from-[#6B7280] to-[#4B5563] text-white hover:from-[#4B5563] hover:to-[#374151] transition-all shadow-md font-medium flex items-center gap-2"
+                    className="px-4 py-3 rounded-lg bg-gradient-to-r from-[#6B7280] to-[#4B5563] text-white hover:from-[#4B5563] hover:to-[#374151] transition-all shadow-md font-medium flex items-center gap-4"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                       <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -399,7 +402,7 @@ function FormSection() {
                   type="submit"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className={`ml-auto px-6 py-3 rounded-lg text-white font-medium transition-all shadow-md flex items-center gap-2 ${
+                  className={`ml-auto px-4 py-3 rounded-lg text-white font-medium transition-all shadow-md flex items-center gap-2 ${
                     isSubmitting 
                       ? 'bg-gradient-to-r from-[#8A1E29] to-[#650E17] cursor-not-allowed'
                       : 'bg-gradient-to-r from-[#650E17] to-[#8A1E29] hover:from-[#8A1E29] hover:to-[#650E17]'

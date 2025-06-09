@@ -50,7 +50,7 @@ function Footer() {
             </div>
             <p className="text-gray-300"
               style={{ marginTop: "8px" }}>
-              &lt;/&gt; with by the foss community of nsbm
+              Made with ❤️ by the FOSS community of NSBM
             </p>
           </div>
         </div>
